@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Daily Shopping List</string>
+    <string name="don_t_have_an_account_login_here">Don\'t have an account? Login here.</string>
+</resources>
