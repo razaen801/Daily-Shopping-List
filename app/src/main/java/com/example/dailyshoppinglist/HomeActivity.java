@@ -32,7 +32,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private DatabaseReference mDatabase;
 
-    private FirebaseAnalytics mFirebaseAnalytics;
+   // private FirebaseAnalytics mFirebaseAnalytics;
     private FirebaseAuth mAuth;
 
 
@@ -51,7 +51,12 @@ public class HomeActivity extends AppCompatActivity {
         String uId = mUser.getUid();
 
         mDatabase = FirebaseDatabase.getInstance().getReference().child("Shopping List").child(uId);
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+      //  mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+
+        //FirebaseDatabase database = FirebaseDatabase.getInstance();
+       // DatabaseReference myRef = database.getReference("database_root_name").child("Shopping List");
+
+       // myRef.setValue("Hello, World!");
 
         fab_btn= findViewById(R.id.fab);
         fab_btn.setOnClickListener(new View.OnClickListener() {
